@@ -15,6 +15,9 @@ public class SecurityConfig {
     @Autowired
     private SecurityFilter securityFilter;
 
+    @Autowired
+    private SecurityCandidateFilter securityCandidateFilter;
+
     @Bean // significa que um método ta sendo utilizado para definir um método já gerenciado pelo spring
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
         http.csrf(csrf -> csrf.disable())
@@ -27,6 +30,7 @@ public class SecurityConfig {
             auth.anyRequest().authenticated();
         })
         .addFilterBefore(securityFilter,BasicAuthenticationFilter.class)
+        .addFilterBefore(securityCandidateFilter, BasicAuthenticationFilter.class)
         ;
         return http.build();
     }
