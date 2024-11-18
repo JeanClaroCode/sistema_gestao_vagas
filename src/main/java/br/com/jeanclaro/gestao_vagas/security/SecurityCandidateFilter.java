@@ -28,6 +28,11 @@ public class SecurityCandidateFilter extends OncePerRequestFilter{
             throws ServletException, IOException {
 
                 // SecurityContextHolder.getContext().setAuthentication(null);
+                if (request.getRequestURI().matches("/swagger-ui.*|/v3/api-docs.*|/swagger-resources.*|/webjars.*|/error")) {
+                    filterChain.doFilter(request, response);
+                    return;
+                }
+
                 String header = request.getHeader("Authorization");
 
                 if(request.getRequestURI().startsWith("/candidate")){
