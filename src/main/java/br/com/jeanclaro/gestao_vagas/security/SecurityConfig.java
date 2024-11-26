@@ -22,15 +22,16 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 public class SecurityConfig {
     
     @Autowired
-    private SecurityFilter securityFilter;
+    private SecurityCompanyFilter securityCompanyFilter;
 
     @Autowired
     private SecurityCandidateFilter securityCandidateFilter;
 
-    private static final String[] SWAGGER_LIST = {
+    private static final String[] PERMIT_ALL_LIST = {
         "/swagger-ui/**",
         "/v3/api-docs/**",
         "/swagger-resources/**",
+        "/actuator/**"
     };    
     @Bean // significa que um método ta sendo utilizado para definir um método já gerenciado pelo spring
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
@@ -42,18 +43,17 @@ public class SecurityConfig {
             .requestMatchers("/company/").permitAll()
             .requestMatchers("/company/auth").permitAll()
             .requestMatchers("/candidate/auth").permitAll()
-            .requestMatchers(SWAGGER_LIST).permitAll()
+            .requestMatchers(PERMIT_ALL_LIST).permitAll()
             ;
-            System.out.println(SWAGGER_LIST);
             auth.anyRequest().authenticated();
         
     })
-        .anonymous(anonymous -> anonymous.disable())
+        // .anonymous(anonymous -> anonymous.disable())
         .addFilterAfter(securityCandidateFilter, BasicAuthenticationFilter.class)
-        .addFilterAfter(securityFilter,BasicAuthenticationFilter.class)
+        .addFilterAfter(securityCompanyFilter,BasicAuthenticationFilter.class)
         ;
         return http.build();
-    }
+    } 
 
     @Bean
     public PasswordEncoder passwordEncoder(){
