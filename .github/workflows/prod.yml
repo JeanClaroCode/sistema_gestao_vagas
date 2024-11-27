@@ -23,4 +23,4 @@ jobs:
             - name: Build docker image
               run: docker build -t jeanclarodev/gestao_vagas .
             - name: Publish image
-              run: docker push jeanclarodev/gestao_vagas .
+              run: docker push jeanclarodev/gestao_vagas 
