@@ -41,5 +41,3 @@ O deploy é automatizado com GitHub Actions:
 Desenvolvido por Jean.  
 - [LinkedIn](https://www.linkedin.com/in/jeanclaro/)   
 --- 
-
-Se precisar de algo mais específico, é só falar! 😊
