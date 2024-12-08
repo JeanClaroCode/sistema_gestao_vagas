@@ -1,7 +1,7 @@
 # Gestão de Vagas  
 
 Uma aplicação para gerenciar candidatos, empresas e vagas, desenvolvida em Java com Spring Boot.  
-<img src="https://private-user-images.githubusercontent.com/160747774/390592711-b4593165-4431-444a-99f7-e639eae11615.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzMwMjYwMDUsIm5iZiI6MTczMzAyNTcwNSwicGF0aCI6Ii8xNjA3NDc3NzQvMzkwNTkyNzExLWI0NTkzMTY1LTQ0MzEtNDQ0YS05OWY3LWU2MzllYWUxMTYxNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjAxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIwMVQwNDAxNDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yZDNhZDU0M2U5MTQyNzQyZDRlZjIyNTU5OWM5YTllNTE4ZDZiOGM1ODE3YTgyYTUxMmQwNDNjNGMyMDg0MTY3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.0YzmaLOkmn3JRm4um7g0SgBFeDEGG_DA6D91h6q-p60" alt="Texto Alternativo">
+<img src="https://cdn.discordapp.com/attachments/1290024608807784549/1315452623138197524/screencapture-54-167-28-98-8080-swagger-ui-index-html-2024-11-27-20_26_05.png?ex=67577639&is=675624b9&hm=80b9f00106ada0f56e59a9904d71c57f1f5b7293dcdcef4f97b492dde0ce3512&" alt="Texto Alternativo">
 
 ## Funcionalidades  
 - **Cadastro de Candidatos:** gerenciamento de informações pessoais e currículos.  
