@@ -1,7 +1,7 @@
 # Gestão de Vagas  
 
 Uma aplicação para gerenciar candidatos, empresas e vagas, desenvolvida em Java com Spring Boot.  
-<img src="https://cdn.discordapp.com/attachments/1290024608807784549/1315452623138197524/screencapture-54-167-28-98-8080-swagger-ui-index-html-2024-11-27-20_26_05.png?ex=67577639&is=675624b9&hm=80b9f00106ada0f56e59a9904d71c57f1f5b7293dcdcef4f97b492dde0ce3512&" alt="Texto Alternativo">
+<img src="https://i.imgur.com/LYkJNCa.png" alt="Texto Alternativo">
 
 ## Funcionalidades  
 - **Cadastro de Candidatos:** gerenciamento de informações pessoais e currículos.  
